@@ -1,0 +1,207 @@
+{
+    margin0;
+    padding0;
+    box-sizingborder-box;
+}
+
+html{
+    scroll-behaviorsmooth;
+}
+
+body{
+
+    background#111;
+
+    colorwhite;
+
+    font-family'Inter',sans-serif;
+
+}
+
+ Hero 
+
+.hero{
+
+    positionrelative;
+
+    width100%;
+
+    height100vh;
+
+    overflowhidden;
+
+}
+
+.hero img{
+
+    width100%;
+
+    height100%;
+
+    object-fitcover;
+
+    animationzoom 18s linear forwards;
+
+}
+
+.overlay{
+
+    positionabsolute;
+
+    inset0;
+
+    backgroundrgba(0,0,0,.15);
+
+}
+
+.name{
+
+    positionabsolute;
+
+    left40px;
+
+    bottom35px;
+
+    letter-spacing.25em;
+
+    font-size13px;
+
+    text-transformuppercase;
+
+}
+
+.date{
+
+    positionabsolute;
+
+    right40px;
+
+    bottom35px;
+
+    letter-spacing.25em;
+
+    font-size13px;
+
+    text-transformuppercase;
+
+}
+
+ About 
+
+.about{
+
+    max-width720px;
+
+    margin120px auto;
+
+    padding0 35px;
+
+}
+
+.about h2{
+
+    font-size12px;
+
+    letter-spacing.25em;
+
+    text-transformuppercase;
+
+    margin-bottom35px;
+
+    font-weight400;
+
+}
+
+.about p{
+
+    color#d5d5d5;
+
+    line-height2;
+
+    font-size15px;
+
+    margin-bottom70px;
+
+}
+
+.contact{
+
+    font-size13px;
+
+    letter-spacing.15em;
+
+    text-transformuppercase;
+
+}
+
+.contact a{
+
+    colorwhite;
+
+    text-decorationnone;
+
+    border-bottom1px solid rgba(255,255,255,.35);
+
+    padding-bottom4px;
+
+    transition.3s;
+
+}
+
+.contact ahover{
+
+    border-colorwhite;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transformscale(1.05);
+
+    }
+
+    to{
+
+        transformscale(1);
+
+    }
+
+}
+
+@media (max-width768px){
+
+.name{
+
+    left20px;
+
+    bottom20px;
+
+    font-size11px;
+
+}
+
+.date{
+
+    right20px;
+
+    bottom20px;
+
+    font-size11px;
+
+}
+
+.about{
+
+    margin80px auto;
+
+}
+
+.about p{
+
+    font-size14px;
+
+}
+
+}
